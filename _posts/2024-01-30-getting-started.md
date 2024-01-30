@@ -84,8 +84,10 @@ Also, if you'd like to self-host the static assets, please refer to the [_chirpy
 
 You may want to preview the site contents before publishing, so just run it by:
 
-```console
-$ bundle exec jekyll s
+```kotlin
+fun test() {
+  val name = "윤재박"
+}
 ```
 
 After a few seconds, the local service will be published at _<http://127.0.0.1:4000>_.
