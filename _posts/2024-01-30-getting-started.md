@@ -94,8 +94,6 @@ After a few seconds, the local service will be published at _<http://127.0.0.1:4
 
 Before the deployment begins, check out the file `_config.yml`{: .filepath} and make sure the `url` is configured correctly. Furthermore, if you prefer the [**project site**](https://help.github.com/en/github/working-with-github-pages/about-github-pages#types-of-github-pages-sites) and don't use a custom domain, or you want to visit your website with a base URL on a web server other than **GitHub Pages**, remember to change the `baseurl` to your project name that starts with a slash, e.g, `/project-name`.
 
-Now you can choose _ONE_ of the following methods to deploy your Jekyll site.
-
 ### Deploy by Using GitHub Actions
 
 There are a few things to get ready for.
@@ -103,11 +101,9 @@ There are a few things to get ready for.
 - If you're on the GitHub Free plan, keep your site repository public.
 - If you have committed `Gemfile.lock`{: .filepath} to the repository, and your local machine is not running Linux, go to the root of your site and update the platform list of the lock-file:
 
-  ```console
-  $ bundle lock --add-platform x86_64-linux
+  ```kotlin
+  val name = "윤재박"
   ```
-
-Next, configure the _Pages_ service.
 
 1. Browse to your repository on GitHub. Select the tab _Settings_, then click _Pages_ in the left navigation bar. Then, in the **Source** section (under _Build and deployment_), select [**GitHub Actions**][pages-workflow-src] from the dropdown menu.  
 
