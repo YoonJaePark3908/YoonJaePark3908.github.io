@@ -117,8 +117,6 @@ At this point, you can go to the URL indicated by GitHub to access your site.
 
 ### Manually Build and Deploy
 
-On self-hosted servers, you cannot enjoy the convenience of **GitHub Actions**. Therefore, you should build the site on your local machine and then upload the site files to the server.
-
 Go to the root of the source project, and build your site as follows:
 
 ```console
