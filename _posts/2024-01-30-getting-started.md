@@ -8,7 +8,7 @@ pin: true
 img_path: '/posts/20180809'
 ---
 
-## Prerequisites
+## 제목 테스트
 
 Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of the basic environment. [Git](https://git-scm.com/) also needs to be installed.
 
