@@ -17,12 +17,21 @@ img_path: '/posts/20180809'
 그러다가 여러 개발 관련 지식이 담긴 글을 읽어오면서 깃허브 블로그가 있다는것을 알게 되었고, 깃허브 블로그의 대부분의 UI가 매우 깔끔하며 코드 블럭 또한 저의
 마음을 사로 잡았습니다. 깃허브 블로그는 jekyll 프레임워크를 사용하여 커스터마이징 테마가 상당히 많습니다. 그 중 가장 마음에 들었던 테마는 [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy) 이였고 바로 적용하였습니다.
 - 티스토리 블로그 코드블럭
-<p>
-    <img src="./assets/img/tistory_code_block.png">
-</p>
-
+<img width="822" alt="tistory_code_block" src="https://github.com/YoonJaePark3908/StockPortfolio/assets/54883589/c06ab3b8-ac76-4846-8370-41c3aa51fae2">
 - 깃허브 블로그 코드블럭
-
+``` kotlin
+fun pathToBitmap(path: String?): Bitmap? {
+    return try {
+        val f = File(path)
+        val options = BitmapFactory.Options()
+        options.inPreferredConfig = Bitmap.Config.ARGB_8888
+        BitmapFactory.decodeStream(FileInputStream(f), null, options)
+    } catch (e: Exception) {
+        e.printStackTrace()
+        null
+    }
+}
+```
 
 ###  
 
