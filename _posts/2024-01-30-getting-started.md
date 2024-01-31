@@ -18,8 +18,9 @@ img_path: '/posts/20180809'
 마음을 사로 잡았습니다. 깃허브 블로그는 jekyll 프레임워크를 사용하여 커스터마이징 테마가 상당히 많습니다. 그 중 가장 마음에 들었던 테마는 [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy) 이였고 바로 적용하였습니다.
 - 티스토리 블로그 코드블럭
 <p>
-    <img src="./assets/img/2024_01_30_getting_started/tistory_code_block.png">
+    <img src="./assets/img/tistory_code_block.png">
 </p>
+
 - 깃허브 블로그 코드블럭
 
 
