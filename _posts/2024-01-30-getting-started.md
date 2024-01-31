@@ -4,28 +4,30 @@ author: Yoon Jaepark
 date: 2024-01-30 14:49:00 +0900
 categories: [Android, Tech]
 tags: [getting started]
-pin: true
+pin: false
 img_path: '/posts/20180809'
 ---
 
-## 제목 테스트
+## 티스토리에서 깃허브로 이전한 이유
 
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of the basic environment. [Git](https://git-scm.com/) also needs to be installed.
+### 깔끔한 테마와 코드블럭
 
-## Installation
+티스토리 블로그의 테마와 코드블럭은 개인적으로 아쉬운 마음이 많이 들었습니다. 특히나 코드블럭은 아쉬운 마음이 많아서 여러가지 테마를 알아봤지만 결국 마음에 드는
+테마를 찾을 수 없었습니다. 직접 테마를 커스터마이징 하는 방법도 있지만, 그러기에는 들어가는 리소스가 많다고 판단하여 보류하면서 블로그를 이용해 왔습니다.
+그러다가 여러 개발 관련 지식이 담긴 글을 읽어오면서 깃허브 블로그가 있다는것을 알게 되었고, 깃허브 블로그의 대부분의 UI가 매우 깔끔하며 코드 블럭 또한 저의
+마음을 사로 잡았습니다. 깃허브 블로그는 jekyll 프레임워크를 사용하여 커스터마이징 테마가 상당히 많습니다. 그 중 가장 마음에 들었던 테마는 [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy) 이였고 바로 적용하였습니다.
+- 티스토리 블로그 코드블럭
+<p>
+    <img src="./assets/img/2024_01_30_getting_started/tistory_code_block.png">
+</p>
+- 깃허브 블로그 코드블럭
 
-### Creating a New Site
 
-There are two ways to create a new repository for this theme:
-
-- [**Using the Chirpy Starter**](#option-1-using-the-chirpy-starter) - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
-- [**GitHub Fork**](#option-2-github-fork) - Convenient for custom development, but difficult to upgrade. Unless you are familiar with Jekyll and are determined to tweak or contribute to this project, this approach is not recommended.
-
-#### Option 1. Using the Chirpy Starter
+###  
 
 Sign in to GitHub and browse to [**Chirpy Starter**][starter], click the button <kbd>Use this template</kbd> > <kbd>Create a new repository</kbd>, and name the new repository `USERNAME.github.io`, where `USERNAME` represents your GitHub username.
 
-#### Option 2. GitHub Fork
+### 
 
 Sign in to GitHub to [fork **Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), and then rename it to `USERNAME.github.io` (`USERNAME` means your username).
 
