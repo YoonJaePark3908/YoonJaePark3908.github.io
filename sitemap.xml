@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
+  {% for _post in _site.posts %}
   <url>
     <loc>{{ _site.url }}{{ _post.url }}</loc>
-    {% if post.lastmod == null %}
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    {% if _post.lastmod == null %}
+    <lastmod>{{ _post.date | date_to_xmlschema }}</lastmod>
     {% else %}
-    <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+    <lastmod>{{ _post.lastmod | date_to_xmlschema }}</lastmod>
     {% endif %}
 
-    {% if post.sitemap.changefreq == null %}
+    {% if _post.sitemap.changefreq == null %}
     <changefreq>daily</changefreq>
     {% else %}
     <changefreq>{{ _post.sitemap.changefreq }}</changefreq>
     {% endif %}
 
-    {% if post.sitemap.priority == null %}
+    {% if _post.sitemap.priority == null %}
     <priority>0.5</priority>
     {% else %}
-    <priority>{{ post.sitemap.priority }}</priority>
+    <priority>{{ _post.sitemap.priority }}</priority>
     {% endif %}
 
   </url>
