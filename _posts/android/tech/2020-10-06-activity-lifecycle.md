@@ -20,7 +20,7 @@ activity 상황에 따라 어떤 메소드들이 콜백 하는지 이해 한다�
 
 다음은 그 유명한 lifecycle 호출 순서에 대한 이미지 입니다.
 
-<img src="/activity_lifecycle.png">
+![activity_lifecycle.png](..%2F..%2F..%2Fassets%2Fimg%2Fandroid%2Factivity_lifecycle.png)
 
 ## onCreate()
 시스템이 activity를 처음 만들 때 호출되는 메서드입니다. 주로 xml을 바인딩 하거나 set 하는 코드를 여기서 작성합니다. 
