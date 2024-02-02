@@ -5,7 +5,7 @@ date: 2020-10-06 14:48:00 +0900
 categories: [Android, Tech]
 tags: [activity lifecycle]
 pin: true
-img_path: './assets/img/android'
+img_path: '/assets/img/android'
 ---
 > Android 개발을 할 때 LifeCycle을 모르면 안될 정도로 중요 합니다. 만약 LifeCycle을 모르고 무작정 개발을 시작했다면, 
 > 오류가 났을 때 무엇이 원인 인지 찾을 수 없을지도 모릅니다. 대학 시절 교수님이 제일 중요하게 강조 하셨던 
@@ -20,7 +20,7 @@ activity 상황에 따라 어떤 메소드들이 콜백 하는지 이해 한다�
 
 다음은 그 유명한 lifecycle 호출 순서에 대한 이미지 입니다.
 
-<img src="/activity_lifecycle.png">
+![activity_lifecycle.png](..%2F..%2F..%2Fassets%2Fimg%2Fandroid%2Factivity_lifecycle.png)
 
 ## onCreate()
 시스템이 activity를 처음 만들 때 호출되는 메서드입니다. 주로 xml을 바인딩 하거나 set 하는 코드를 여기서 작성합니다. 
