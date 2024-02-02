@@ -2,7 +2,7 @@
 title: Android Java에서 Kotlin으로 넘어갔을 때 느낀점
 author: jaepark
 date: 2021-06-22 17:15:00 +0900
-categories: [Kotlin, Etc]
+categories: [Kotlin, Experience]
 tags: [kotlin]
 pin: true
 img_path: '/assets/img'
