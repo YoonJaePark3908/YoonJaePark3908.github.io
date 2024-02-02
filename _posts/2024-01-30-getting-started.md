@@ -4,7 +4,7 @@ author: jaepark
 date: 2024-01-30 14:49:00 +0900
 categories: [Etc, Blog]
 tags: [getting started]
-pin: false
+pin: true
 img_path: '/assets/img'
 ---
 ## 코드블럭
