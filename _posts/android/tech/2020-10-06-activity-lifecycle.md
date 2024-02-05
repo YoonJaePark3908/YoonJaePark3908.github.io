@@ -10,7 +10,6 @@ img_path: '/assets/img/android'
 > Android 개발을 할 때 LifeCycle을 모르면 안될 정도로 중요 합니다. 만약 LifeCycle을 모르고 무작정 개발을 시작했다면, 
 > 오류가 났을 때 무엇이 원인 인지 찾을 수 없을지도 모릅니다. 대학 시절 교수님이 제일 중요하게 강조 하셨던 
 > 그 Lifecycle을 공부하며 정리 해볼까 합니다.
-{: .prompt-info }
 
 ## **Activity의 Lifecycle이란?**
 
