@@ -4,4 +4,4 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> About 작성하기
+> 안녕하세요, 윤재박입니다. 
