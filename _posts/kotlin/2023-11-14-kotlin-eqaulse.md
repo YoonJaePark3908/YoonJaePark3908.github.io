@@ -2,7 +2,7 @@
 title: Kotlin ==, === 연산에 대해 정리
 author: jaepark
 date: 2023-11-14 22:15:00 +0900
-categories: [Kotlin, Tech]
+categories: [Kotlin]
 tags: [kotlin, equals]
 pin: true
 img_path: '/assets/img'

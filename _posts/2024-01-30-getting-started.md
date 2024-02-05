@@ -2,7 +2,7 @@
 title: 티스토리에서 깃허브로 이전한 이유
 author: jaepark
 date: 2024-01-30 14:49:00 +0900
-categories: [Etc, Blog]
+categories: [Etc]
 tags: [getting started]
 pin: true
 img_path: '/assets/img'
