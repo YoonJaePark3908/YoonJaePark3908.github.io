@@ -2,7 +2,7 @@
 title: Android Component란 무엇인가?
 author: jaepark
 date: 2022-02-25 12:03:00 +0900
-categories: [Android, Tech]
+categories: [Android]
 tags: [android component]
 pin: true
 img_path: '/assets/img'

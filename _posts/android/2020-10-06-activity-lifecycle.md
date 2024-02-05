@@ -2,7 +2,7 @@
 title: Android Activity LifeCycle에 대해 정리
 author: jaepark
 date: 2020-10-06 14:48:00 +0900
-categories: [Android, Tech]
+categories: [Android]
 tags: [activity lifecycle]
 pin: true
 img_path: '/assets/img/android'
