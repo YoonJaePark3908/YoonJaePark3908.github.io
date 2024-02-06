@@ -54,3 +54,5 @@ Hello World!
 ## **차이점**
 둘의 명확한 차이점은 초기화 시점에 있습니다. object는 object를 불러올 때까지 초기화를 늦추는 반면, companion object는 선언된 class가 초기화되는 시점에 같이 초기화가 됩니다.
 
+**참고**  
+[Kotlin 공식 문서](https://kotlinlang.org/docs/object-declarations.html#semantic-difference-between-object-expressions-and-declarations)
