@@ -1,0 +1,60 @@
+---
+title: Android Test Code 도입기 1편 - 사전 조사
+author: jaepark
+date: 2023-09-08 12:29:00 +0900
+categories: [Android]
+tags: [list and set]
+pin: true
+img_path: '/assets/img'
+---
+> 본격적인 회사 앱에 테스트 코드 도입하기 전 제가 사전 조사한 내용을 공유합니다.
+
+## **테스트 코드 적용 목표 및 이점**
+- 공용 코드 수정으로 인한 사이드 이슈를 빠르게 확인할 수 있습니다.
+- 코드 수정 및 리팩토링 후 결과 확인 시간을 단축할 수 있습니다.
+- 사소한 오류로 인해 apk를 다시 업로드하는 번거로움을 줄일 수 있습니다.
+- 신속한 CS 처리 및 버그 수정을 도와줍니다.
+
+## **테스트 코드 작성의 한계**
+- 모든 케이스에 대해 오로지 테스트 코드로 테스트하기에는 분명 한계점이 존재합니다. 즉 직접 눈으로 보고 동작을 하는 QA 단계를 거쳐야 하겠지만 
+개발 및 수정 단계에서 다시 확인해야 하는 번거로움을 줄이는 방향으로 테스트 코드를 작성해야 할 것입니다.
+- 테스트 단위가 커지면 커질수록 테스트 코드를 빌드하는 시간이 길어질 수 있습니다.
+- Android xml UI 시스템으로 개발한 회사에서 UI 테스트가 어렵다고 판단 했지만, 현재 에듀윌 합격앱은 개편이후 거의 모든 UI를 
+- Compose로 작성된 상태임으로 Compose의 Test Code에 대한 검토가 필요합니다.
+
+## **Compose Test Code 검토**
+- 해당 뷰가 존재하는지 아닌지, 서버 데이터와 UI에 표시된 데이터가 매칭이 되는지, Enabled, Selected 등등 테스트가 가능합니다. 
+검토 과정에서 내린 결론은 Compose로 작성된 앱에서 테스트 코드를 작성할 때 대부분의 시나리오에 대해서는 테스트가 가능하다고 판단됩니다. 
+- Compose로 테스트할 때 유용한 점은 Componant의 분리가 가능합니다. xml에서는 분리하는 것이 너무 복잡하고 어려운 반면, 
+Compose는 함수 단위로 쪼개서 분리가 용이하기 때문에 함수 단위로도 테스트가 가능합니다.
+- View Action에 대한 컨트롤이 가능합니다.
+- Compose Test Code에 관련된 모든 함수들이 담겨있는 [pdf 다운로드](https://github.com/YoonJaePark3908/StockPortfolio/files/14173240/compose-testing-cheatsheet.pdf)
+
+## **AndroidTest VS Test**
+### AndroidTest
+앱이 실행되어야 얻을 수 있는 변수(context, activity 등등)까지 고려하여 테스트 가능하지만 속도가 느립니다. 
+Compose 테스트할 때도 해당 패키지에서 실행해야 하므로 많이 사용될 것으로 보입니다. AndroidTest는 앱이 빌드 된 상태에서 실행 가능합니다. 
+### Test
+앱이 실행되어야 얻을 수 있는 변수를 고려하여 테스트를 못하는 대신 테스트 속도가 빠릅니다. Android와 관련 없는 알고리즘 테스트에 유용해 보입니다.
+
+## **테스트 코드가 작성 되면 좋을 시나리오**
+제가 고민하면서 결론 내린 테스트 코드가 작성되면 좋을 시나리오는 다음과 같습니다.
+1. 테스터가 여러 케이스를 입력하고 확인해야 하는 번거로운 부분에 대해서 테스트 코드를 작성합니다. ex) 로그인 화면에서 아이디, 비밀번호 유효성 체크
+2. 상황에 따라 여러 타입의 데이터가 들어간 후 기대 결괏값이 다른 기능에 대해서 테스트 코드 작성합니다. ex) 서버에서 내려주는 타입에 따라 메인 화면에 띄워지는 여러 종류의 팝업 UI 테스트
+3. 정책상 수정이 빈번하게 이뤄지거나 수정 시 사이드 이펙트 요소가 있는 부분에서 테스트 코드를 작성합니다. ex) 공용 컴포넌트의 UI 옵션을 수정함으로 인해서 사이드 이펙트가 없는지?
+4. ViewModel, Data(UseCase, Repository, DataSource) 각각 함수에 대한 검증
+
+## **[Test Code 튜토리얼](https://developer.android.com/codelabs/jetpack-compose-testing#0)**
+
+## 유용한 Test Code Sample Project
+- [로그인 화면 id, password test](https://github.com/pavan5208/android_unit_tests)
+- [안드로드 공식 샘플 프로젝트](https://github.com/android/nowinandroid/tree/main)
+
+이제 사전조사는 어느정도 됐으니 테스트 코드 작성을 시작하고 느낀점을 작성하겠습니다. 2편에서 계속!
+
+참고 문서
+- [Android Developer Test](https://developer.android.com/studio/test)
+- [Android Developer Compose Test](https://developer.android.com/jetpack/compose/testing#common-patterns)
+- [카카오](https://tech.kakao.com/2021/11/08/test-code/)
+- [뱅크샐러드](https://blog.banksalad.com/tech/test-in-banksalad-android/)
+- [NHN](https://meetup.nhncloud.com/posts/184)
