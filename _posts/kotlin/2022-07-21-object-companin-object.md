@@ -2,7 +2,7 @@
 title: Kotlin object와 companion object에 대해 공부
 author: jaepark
 date: 2022-07-21 10:15:00 +0900
-categories: [Etc]
+categories: [Kotlin]
 tags: [kotlin object]
 pin: false
 img_path: '/assets/img'
