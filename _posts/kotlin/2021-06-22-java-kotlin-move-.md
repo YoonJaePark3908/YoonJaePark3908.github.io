@@ -4,7 +4,7 @@ author: jaepark
 date: 2021-06-22 17:15:00 +0900
 categories: [Kotlin]
 tags: [kotlin]
-pin: true
+pin: false
 img_path: '/assets/img'
 ---
 

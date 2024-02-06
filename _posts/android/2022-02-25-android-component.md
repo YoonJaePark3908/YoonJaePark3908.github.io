@@ -4,7 +4,7 @@ author: jaepark
 date: 2022-02-25 12:03:00 +0900
 categories: [Android]
 tags: [android component]
-pin: true
+pin: false
 img_path: '/assets/img'
 ---
 > Android Developer 홈페이지의 공식 문서를 읽다보면 Component에 대한 언급이 자주 등장 합니다.
