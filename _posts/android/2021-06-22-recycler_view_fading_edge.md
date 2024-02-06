@@ -21,8 +21,10 @@ android:requiresFadingEdge="vertical"
 
 **RecyclerView를 커스텀하는 class를 하나 파서 다음과 같이 만듭니다.**
 ```kotlin
-class CustomRecyclerView(context: Context, attrs: AttributeSet?) : RecyclerView(context, attrs) {
-
+class CustomRecyclerView(
+  context: Context, 
+  attrs: AttributeSet?
+) : RecyclerView(context, attrs) {
     //하단 Alpha 제거
     override fun getBottomFadingEdgeStrength(): Float {
         return 0f
