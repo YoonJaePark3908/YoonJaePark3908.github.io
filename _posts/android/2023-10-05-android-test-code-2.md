@@ -60,5 +60,5 @@ View, ViewModel, UseCase, Repository, Datasource 모듈이 분리가 되니 함�
 읽어주셔서 감사합니다~!
 
 ## **참고 할만한 샘플 코드**
-[nowinandroid]("https://github.com/android/nowinandroid")  
-[testing-samples]("https://github.com/android/testing-samples")
+[nowinandroid](https://github.com/android/nowinandroid)  
+[testing-samples](https://github.com/android/testing-samples)
