@@ -2,9 +2,9 @@
 title: Android Test Code 도입기 2편 - 느낀점
 author: jaepark
 date: 2023-10-05 15:42:00 +0900
-categories: [Etc]
-tags: [getting started]
-pin: true
+categories: [Android]
+tags: [android test code]
+pin: false
 img_path: '/assets/img'
 ---
 > 사전 조사를 마치고 본격적으로 테스트 코드를 작성하면서 겪은 시행착오와 개인적으로 느낀점을 공유합니다. 순수 개인 의견이니 참고 바랍니다.

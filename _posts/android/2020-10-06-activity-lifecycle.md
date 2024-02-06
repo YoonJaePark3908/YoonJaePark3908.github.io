@@ -4,7 +4,7 @@ author: jaepark
 date: 2020-10-06 14:48:00 +0900
 categories: [Android]
 tags: [activity lifecycle]
-pin: true
+pin: false
 img_path: '/assets/img/android'
 ---
 > Android 개발을 할 때 LifeCycle을 모르면 안될 정도로 중요 합니다. 만약 LifeCycle을 모르고 무작정 개발을 시작했다면, 

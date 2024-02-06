@@ -3,8 +3,8 @@ title: Android Test Code 도입기 1편 - 사전 조사
 author: jaepark
 date: 2023-09-08 12:29:00 +0900
 categories: [Android]
-tags: [list and set]
-pin: true
+tags: [android test code]
+pin: false
 img_path: '/assets/img'
 ---
 > 본격적인 회사 앱에 테스트 코드 도입하기 전 제가 사전 조사한 내용을 공유합니다.

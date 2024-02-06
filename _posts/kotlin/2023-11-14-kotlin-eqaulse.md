@@ -4,7 +4,7 @@ author: jaepark
 date: 2023-11-14 22:15:00 +0900
 categories: [Kotlin]
 tags: [kotlin, equals]
-pin: true
+pin: false
 img_path: '/assets/img'
 ---
 ## **[공식 문서](https://kotlinlang.org/docs/equality.html)에 나온 Equality 내용**
