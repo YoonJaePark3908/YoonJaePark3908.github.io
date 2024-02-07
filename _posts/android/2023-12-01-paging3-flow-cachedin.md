@@ -2,8 +2,8 @@
 title: Android Paging3 Flow에 왜 CachedIn을 할까?
 author: jaepark
 date: 2023-12-01 13:13:00 +0900
-categories: [Kotlin]
-tags: [list and set]
+categories: [Android]
+tags: [paging3]
 pin: false
 img_path: '/assets/img'
 ---
