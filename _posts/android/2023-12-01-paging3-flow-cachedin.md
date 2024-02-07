@@ -50,17 +50,17 @@ fun getSearchResult(query: String) = viewModelScope.launch {
 2. 검색 결과가 보여진 후 화면 회전
 3. 로그를 확인하여 서버를 다시 찌르는지 확인
 
-<img width="300" src="https://github.com/YoonJaePark3908/StockPortfolio/assets/54883589/25db215f-e875-4805-84c0-e2038907ee84">
+<img width="300" alt="image_1" src="https://github.com/YoonJaePark3908/StockPortfolio/assets/54883589/25db215f-e875-4805-84c0-e2038907ee84">
 
 ## **실험 결과**
 
 ### Case1 cachedIn을 적용하지 않은 코드 로그
 
-<img src="https://github.com/YoonJaePark3908/StockPortfolio/assets/54883589/86c34960-9b0b-4eb5-90c5-5cf93b6cfe8b">
+<img alt="image_2" src="https://github.com/YoonJaePark3908/StockPortfolio/assets/54883589/86c34960-9b0b-4eb5-90c5-5cf93b6cfe8b">
 
 ### Case2 cachedIn을 적용한 코드 로그
 
-<img src="https://github.com/YoonJaePark3908/StockPortfolio/assets/54883589/17c01064-91dc-4121-8957-28fbc741912d">
+<img alt="image_3" src="https://github.com/YoonJaePark3908/StockPortfolio/assets/54883589/17c01064-91dc-4121-8957-28fbc741912d">
 
 cachedIn을 하지 않았을 경우 화면 회전을하면 페이징 내부에서 서버를 다시 찌르는 로직을 타는 반면, cachedIn 적용 후 화면 회전을 하면 캐싱된 데이터를 적재하여 서버를 다시 찌르지 않았습니다.
 config change 시나리오와 같이 같은 데이터를 쓰게 될 경우 라이브러리가 알아서 캐싱된 데이터를 가져와 초기화 해줌으로 서버를 다시 찌르는 번거로움이 없어졌으며, 
