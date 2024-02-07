@@ -51,7 +51,7 @@ fun getSearchResult(query: String) = viewModelScope.launch {
 3. 로그를 확인하여 서버를 다시 찌르는지 확인
 
 <p align="start">
-<img src="https://github.com/YoonJaePark3908/StockPortfolio/assets/54883589/e928c1ab-16dd-4f14-a667-b615be98e2ce">
+<img alt="image_1" src="https://github.com/YoonJaePark3908/StockPortfolio/assets/54883589/e928c1ab-16dd-4f14-a667-b615be98e2ce">
 </p>
 
 ## **실험 결과**
