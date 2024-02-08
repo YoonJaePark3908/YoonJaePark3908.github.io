@@ -51,4 +51,5 @@ user data class를 자동으로 생성된 toString을 출력 해본결과 data c
 #### 프로퍼티 : 클래스 안에서 정의된 변수
 참고  
 [Kotlin 공식 문서 - data classes](https://kotlinlang.org/docs/data-classes.html)  
-[Kotlin 공식 문서 - collections copy](https://kotlinlang.org/docs/constructing-collections.html#copy)
+[Kotlin 공식 문서 - collections copy](https://kotlinlang.org/docs/constructing-collections.html#copy)  
+[코틀린 생성자(Kotlin Constructor) 제대로 이해하기](https://readystory.tistory.com/124)
