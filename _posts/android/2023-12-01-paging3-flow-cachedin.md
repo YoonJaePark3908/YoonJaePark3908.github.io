@@ -70,5 +70,5 @@ config change 시나리오와 같이 같은 데이터를 쓰게 될 경우 라�
 
 이를 통해 왜 페이징 flow에 cachedIn을 하는지 알게 됐습니다.
 
-참고  
+**참고**     
 [Android Developer](https://developer.android.com/topic/libraries/architecture/paging/v3-paged-data)
