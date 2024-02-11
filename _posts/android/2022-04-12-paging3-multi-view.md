@@ -118,9 +118,7 @@ override fun getItemViewType(position: Int): Int {
 <img width="400" alt="image_4" src="https://github.com/YoonJaePark3908/AndroidLaboratory/assets/54883589/945399a3-796e-4097-8b86-8f948fc84684">
 
 ### **상용앱 적용 사례: ifland**
-<p align="left">
-<img width="400" alt="image_5" src="/ifland.gif" align="left">
-</p>
+![ifland](/assets/img/ifland.gif){: width="400" .left}
 
 이 외의 적재 순서를 다르게 하고싶다면 알고리즘 add 순서를 바꿔서 데이터에 넣어주면 됩니다. 
 또한 뷰 타입이 늘어나거나 API가 늘어나도 확장을 쉽게 할 수 있습니다.  
