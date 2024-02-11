@@ -2,8 +2,8 @@
 title: Kotlin StateFlow와 SharedFlow 차이
 author: jaepark
 date: 2022-11-01 04:58:00 +0900
-categories: [Android]
-tags: [compose]
+categories: [Kotlin]
+tags: [state flow,shared flow]
 pin: false
 img_path: '/assets/img'
 ---
