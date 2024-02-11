@@ -3,7 +3,7 @@ title: Kotlin Enum에서 value() 함수 대신에 entries를 사용하면 좋은
 author: jaepark
 date: 2023-07-19 13:13:00 +0900
 categories: [Kotlin]
-tags: [paging3]
+tags: [enum]
 pin: false
 img_path: '/assets/img'
 ---
