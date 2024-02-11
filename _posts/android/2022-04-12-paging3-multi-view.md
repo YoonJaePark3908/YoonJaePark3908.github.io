@@ -5,7 +5,7 @@ date: 2022-04-12 16:58:00 +0900
 categories: [Android]
 tags: [paging3]
 pin: false
-img_path: './assets/img'
+img_path: '/assets/img'
 ---
 >본문에 들어가기 앞서, 풀 소스코드 링크 공유합니다. 본 포스팅은 Paging3 라이브러리를 사용하여 리스트를 구성해본적이 있어야 쉽게 이해 하실 수 있습니다. 
 >Paging3 라이브러리를 사용방법은 구글링 해보면 많이 나오니 참고하시기 바랍니다.
@@ -117,11 +117,12 @@ override fun getItemViewType(position: Int): Int {
 
 <img width="400" alt="image_4" src="https://github.com/YoonJaePark3908/AndroidLaboratory/assets/54883589/945399a3-796e-4097-8b86-8f948fc84684">
 
-### **상용앱 적용 사례: ifland**
-![ifland](/assets/img/ifland.gif){: width="400" .left}
 
-이 외의 적재 순서를 다르게 하고싶다면 알고리즘 add 순서를 바꿔서 데이터에 넣어주면 됩니다. 
-또한 뷰 타입이 늘어나거나 API가 늘어나도 확장을 쉽게 할 수 있습니다.  
-감사합니다!
+### **상용앱 적용 사례: ifland**
+
+![ifland](/ifland.gif){: width="400"}
+
+이 외의 적재 순서를 다르게 하고싶다면 알고리즘 add 순서를 바꿔서 데이터에 넣어주면 됩니다.<br>
+또한 뷰 타입이 늘어나거나 API가 늘어나도 확장을 쉽게 할 수 있습니다.
 
 
