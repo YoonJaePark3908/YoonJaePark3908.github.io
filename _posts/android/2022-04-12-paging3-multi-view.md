@@ -12,15 +12,16 @@ img_path: '/assets/img'
 
 [**GitHub 소스 코드 링크**](https://github.com/YoonJaePark3908/AndroidLaboratory)
 
-일반적인 페이징에서는 다음과 같이 한 개의 뷰 타입만이 고려가 됩니다. 
+일반적인 페이징에서는 다음과 같이 한 개의 뷰 타입만이 고려가 됩니다.
 
-<img width="400" alt="image_1" src="https://github.com/YoonJaePark3908/AndroidLaboratory/assets/54883589/1a81a290-425f-4696-9aba-69fa9b255805">
+![image_1](/android/paging3/multiview/image_1.gif){: width="350"}
 
-이렇게 페이징을 적용하고 그대로 간다면 좋겠지만 개발자에게는 다양한 요구사항이 들어옵니다.
-**현재 대전시의 관광지 리스트를 페이징 적용한 상태에서 리스트 사이 사이에 음식점 광고를 넣어달라하면 어떻게 해야할까요?**
+이렇게 페이징을 적용하고 그대로 간다면 좋겠지만 개발자에게는 다양한 요구사항이 들어옵니다.<br>
+**현재 대전시의 관광지 리스트를 페이징 적용한 상태에서 리스트 사이 사이에 음식점 광고를 넣어달라하면 어떻게 해야할까요?**<br>
 대전시 관광 리스트 API, 음식점 광고 API가 따로 있고 페이징 라이브러리가 적용된 상황에서, 멀티뷰를 다음과 같이 적용하려면 어떻게 할까 고민을 했습니다.
 
-<img width="400" alt="image_2" src="https://github.com/YoonJaePark3908/AndroidLaboratory/assets/54883589/796e7960-8e3c-4687-9350-727a7b4c6e59" >
+![image_2](/android/paging3/multiview/image_2.png){: width="350"}
+
 **제 고민의 결론은 페이징 라이브러리에 2개의 데이터(관광지, 음식점)를 통합한 sealed interface를 하나 만들어서 보내면 될 것 같다는 생각을 했습니다.**
 
 과정은 다음과 같습니다.
@@ -43,7 +44,7 @@ sealed interface MainPagingModel {
 }
 ```
 2. MainPagingSource에서 보낼 Model을 변경 후 사이사이에 끼워주는 알고리즘을 작성합니다.
-<img alt="image_3" src="https://github.com/YoonJaePark3908/AndroidLaboratory/assets/54883589/ecb9695a-fc5c-446a-b6a1-79fac6602c91">
+![image_3](/android/paging3/multiview/image_3.png)<br>
 2개의 데이터를 통합한 모델을 페이징 라이브러리에 적재 후 알고리즘을 적용 한 코드는 다음과 같습니다.
 ```kotlin
 class MainPagingSource: PagingSource<Int, MainPagingModel>() {
@@ -115,12 +116,11 @@ override fun getItemViewType(position: Int): Int {
 
 ### **결과물**
 
-<img width="400" alt="image_4" src="https://github.com/YoonJaePark3908/AndroidLaboratory/assets/54883589/945399a3-796e-4097-8b86-8f948fc84684">
-
+![image_4](/android/paging3/multiview/image_4.gif){: width="350"}
 
 ### **상용앱 적용 사례: ifland**
 
-![ifland](/ifland.gif){: width="400"}
+![ifland](/android/paging3/multiview/ifland.gif){: width="350"}
 
 이 외의 적재 순서를 다르게 하고싶다면 알고리즘 add 순서를 바꿔서 데이터에 넣어주면 됩니다.<br>
 또한 뷰 타입이 늘어나거나 API가 늘어나도 확장을 쉽게 할 수 있습니다.
