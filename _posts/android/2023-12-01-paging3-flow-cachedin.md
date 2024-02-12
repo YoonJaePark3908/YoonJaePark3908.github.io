@@ -50,9 +50,7 @@ fun getSearchResult(query: String) = viewModelScope.launch {
 2. 검색 결과가 보여진 후 화면 회전
 3. 로그를 확인하여 서버를 다시 찌르는지 확인
 
-<p align="start">
-<img alt="image_1" src="https://github.com/YoonJaePark3908/StockPortfolio/assets/54883589/e928c1ab-16dd-4f14-a667-b615be98e2ce">
-</p>
+![image_1](/android/paging3/cachedin/image_1.gif){: width="300" }
 
 ## **실험 결과**
 
