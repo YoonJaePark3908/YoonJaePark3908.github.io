@@ -3,7 +3,7 @@ title: Android RecyclerView fadingEdge 상단만 적용하는 방법
 author: jaepark
 date: 2021-06-22 13:39:00 +0900
 categories: [Android]
-tags: [android recyclerview]
+tags: [recyclerview]
 pin: false
 img_path: '/assets/img'
 ---
