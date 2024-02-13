@@ -53,8 +53,8 @@ main runBlocking: After delay in thread main
 처음 Unconfined를 실행했을 때 처음 호출된 main 스레드에서 돌아가지만 IO Dispatcher 안에 돌아가는 suspend 키워드의 delay 코드를 만나게 된 후 IO thread 풀에서 돌아가는 것을 확인할 수 있습니다. 
 만약 IO Dispatcher를 설정하지 않고 그냥 돌리면 Default Dispatcher에서 돌아가는 것을 확인할 수 있습니다.
 
->공식 문서에서는 Unconfined Dispathcer의 경우 특이 케이스에서 도움이 되는 고급 매커니즘이기 때문에 일반 코드에서는 사용을 지양하라고 합니다.
->[원문](https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html#unconfined-vs-confined-dispatcher)
+>[공식 문서](https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html#unconfined-vs-confined-dispatcher)에서는 
+> Unconfined Dispathcer의 경우 특이 케이스에서 도움이 되는 고급 매커니즘이기 때문에 일반 코드에서는 사용을 지양하라고 합니다.
 {: .prompt-warning }
 
 **참고**<br>
