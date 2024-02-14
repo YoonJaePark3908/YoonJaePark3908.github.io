@@ -19,7 +19,7 @@ img_path: '/assets/img'
 보통 실무를 하다 보면 기본 구조들은 다 갖춰져 있기 때문에 있는 코드를 재활용하거나, 함수를 불러와서 사용하면 기능 구현에는 문제가 없습니다.  
 하지만 이는 기능 구현에 대한 스킬은 올라가겠지만 그 이상의 성장은 하기가 어렵습니다. 
 사이드 프로젝트에서는 모든 모듈들과 구조를 내가 만들어야 하기 때문에 안드로이드 개발의 모든 것들을 배우고 고민할 수 있습니다. 
-저는 사이드 프로젝트를 하면서 네트워크 모듈(Retrofit2), DI 구축(Hilt),[Android Archtecture 직접 설계](https://developer.android.com/topic/architecture), 
+저는 사이드 프로젝트를 하면서 네트워크 모듈(Retrofit2), DI 구축(Hilt), [Android Archtecture 직접 설계](https://developer.android.com/topic/architecture), 
 Local DB 모듈 구축 등등 스스로 공부하여 사용할 수 있는 기회를 갖게 되어 실력 향상에 많은 도움이 됐습니다.
 
 ### 기획, 디자인, 사용자 편리성에 대해 깊게 고민
