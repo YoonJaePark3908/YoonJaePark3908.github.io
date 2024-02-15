@@ -19,8 +19,12 @@ data class User(val name: String = "John", val age: Int = 42)
 
 이러한 자동으로 generated 되는 코드의 일관성과 의미있는 동작을 보장하기 위해서 다음과 같은 제약사항이 있습니다.
 
-- 한개 이상의 프로퍼티가 정의 되어야 합니다.
-- 
+- data class의 primary constructor는 최소 한개의 파라미터를 가져야 합니다.
+- 모든 primary constructor의 파라미터는 val 또는 var 키워드로 선언돼야 합니다.
+- data class는 abstract, open, sealed, inner를 선언할 수 없습니다.
+
+> primary constructor에 대해 쓴 좋은 글을 보시려면 [여기](https://readystory.tistory.com/124)로 들어가서 읽으시면 됩니다.
+{: .prompt-tip }
 
 ## **실험**
 ### data class 내부에 선언한 변수도 자동으로 함수를 만들어줄까?
