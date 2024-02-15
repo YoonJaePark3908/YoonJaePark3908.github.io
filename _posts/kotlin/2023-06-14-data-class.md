@@ -24,7 +24,7 @@ data class User(val name: String = "John", val age: Int = 42)
 - data class는 abstract, open, sealed, inner를 선언할 수 없습니다.
 
 > primary constructor에 대해 쓴 좋은 글을 보시려면 [여기](https://readystory.tistory.com/124)로 들어가서 읽으시면 됩니다.
-{: .prompt-tip }
+> {: .prompt-tip }
 
 ## **실험**
 ### data class 내부에 선언한 변수도 자동으로 함수를 만들어줄까?
