@@ -21,10 +21,10 @@ data class User(val name: String = "John", val age: Int = 42)
 
 - data class의 primary constructor는 최소 한개의 파라미터를 가져야 합니다.
 - 모든 primary constructor의 파라미터는 val 또는 var 키워드로 선언돼야 합니다.
-- data class는 abstract, open, sealed, inner를 선언할 수 없습니다.
+- data class는 abstract, open, sealed, inner를 선언할 수 없습니다.<br>
 
-> primary constructor에 대해 쓴 좋은 글을 보시려면 [여기](https://readystory.tistory.com/124)로 들어가서 읽으시면 됩니다.
-> {: .prompt-tip }
+> primary constructor에 대해 정리 잘 된 글을 보시려면 [여기](https://readystory.tistory.com/124)를 클릭 해주세요.
+{: .prompt-tip }
 
 ## **실험**
 ### data class 내부에 선언한 변수도 자동으로 함수를 만들어줄까?
@@ -56,4 +56,3 @@ user data class를 자동으로 생성된 toString을 출력 해본결과 data c
 참고  
 [Kotlin 공식 문서 - data classes](https://kotlinlang.org/docs/data-classes.html)  
 [Kotlin 공식 문서 - collections copy](https://kotlinlang.org/docs/constructing-collections.html#copy)  
-[코틀린 생성자(Kotlin Constructor) 제대로 이해하기](https://readystory.tistory.com/124)
