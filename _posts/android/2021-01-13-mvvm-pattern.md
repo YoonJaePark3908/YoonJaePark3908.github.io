@@ -45,7 +45,3 @@ Android의 ViewModel은 activity의 lifecycle을 따라갑니다. 즉, activity�
 
 하지만, MVVM의 ViewModel과 Android의 ViewModel은 다릅니다. MVVM의 ViewModel 개념은 android 외에도, 다양한 플랫폼에서 사용 되는 포괄적인 개념이며, 
 Android의 ViewModel은 android의 lifecycle까지 고려하여 보다 더 빠르고 정확하게 MVVM 패턴을 기반으로 개발을 할 수 있도록 도우는 jetpack 라이브러리 입니다.
-
-
-이상 포스팅을 마치며, Android에서 구현한 간단한 MVVM [예제 소스](https://github.com/YoonJaePark3908/AndroidMVVMBase) 공유 드립니다.<br> 
-감사합니다.
