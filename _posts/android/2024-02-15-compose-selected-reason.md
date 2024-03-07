@@ -7,7 +7,6 @@ tags: [compose]
 pin: false
 img_path: '/assets/img'
 ---
-
 ## **특정 트리거로 인해 UI Update 시 불필요한 렌더링 완화로 인한 성능 향상**
 [기존 View System에서 자식뷰가 새로 그려지게 되면 그 위에있는 ViewGroup 안에 있는 뷰도 같이 새로 그려지게 됩니다.](https://developer.android.com/topic/performance/rendering/optimizing-view-hierarchies#managing) 
 이를 보완하기 위해 Google Android 팀은 ViewGroup의 Depth를 최소하기 위해 ConstraintLayout을 사용을 권장합니다.
@@ -22,7 +21,7 @@ Compose는 기존 xml과 비교 했을 때 개발 퍼포먼스 및 유지 보수
 ### **더 짧은 코드 작성**
 Compose는 네이티브 코드와 xml 창을 동시에 띄우지 않아도 코드 하나로 개발이 가능합니다. 이는 xml 코드 따로, 네티이브 코드 따로 작성이 필요한 기존 View 보다
 더 적은 코드 작성으로 개발 퍼포먼스를 향상 시킬 수 있습니다. 대표적인 예가 List View를 작성할 때 입니다. 기존 View System에서는 List UI를 작성할 때 ListView 또는 RecyclerView를 사용합니다.
-이 두개의 위젯은 각각 Item의 Adapter가 필요한데요. 코드로 한번 살펴 보겠습니다.
+이 두개의 위젯은 각각 Item의 Adapter가 필요한데요. 같은 list UI를 그리는 코드로 한번 살펴 보겠습니다.
 #### **기존 View System**
 TestRecyclerViewAdapter.kt
 ```kotlin
