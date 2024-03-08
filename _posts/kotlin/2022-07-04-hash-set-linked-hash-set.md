@@ -24,13 +24,15 @@ public fun <T> Array<out T>.toSet(): Set<T> {
 HashSet은 요소를 추가한 순서를 저장하지 않고 LinkedHashSet은 요소를 추가한 순서를 저장합니다.
 코드 결과로 보면 다음과 같습니다.
 ```kotlin
-val hashSet = hashSetOf("apple","banana","grape")
-hashSet.add("orange")
-hashSet.add("melon")
+val hashSet = hashSetOf("apple","banana","grape").apply {
+  add("orange")
+  add("melon")
+}
 
-val linkedHashSet = mutableSetOf("apple","banana","grape")
-linkedHashSet.add("orange")
-linkedHashSet.add("melon")
+val linkedHashSet = mutableSetOf("apple","banana","grape").apply {
+  add("orange")
+  add("melon")
+}
 
 println("hashSet = $hashSet")
 println("linkedHashSet = $linkedHashSet")
