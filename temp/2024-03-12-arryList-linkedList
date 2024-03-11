@@ -1,9 +1,9 @@
 ---
-title: Kotlin Data Class hashCode()의 이해 
+title: Kotlin ArrayList와 LinkedList
 author: jaepark
 date: 2020-11-23 14:39:00 +0900
 categories: [Kotlin]
-tags: [data class]
+tags: [list]
 pin: false
 img_path: '/assets/img'
 ---
