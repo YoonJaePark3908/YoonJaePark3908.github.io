@@ -9,7 +9,8 @@ img_path: '/assets/img'
 ---
 ## **Object**
 kotlin에서 객체를 싱글톤으로 동작하고 싶으면 간단하게 object 키워드를 사용하여 구현할 수 있습니다. 
-- 싱글톤 패턴 : 메모리상에 단 하나만의 객체를 생성하기 위해 만드는 패턴
+> 싱글톤 패턴 : 메모리상에 단 하나만의 객체를 생성하기 위해 만드는 패턴
+{: .prompt-info }
 
 ```kotlin
 object MyObject {
