@@ -21,7 +21,7 @@ public fun <T> Array<out T>.toSet(): Set<T> {
     }
 }
 ```
-HashSet은 요소를 추가한 순서를 저장하지 않고 LinkedHashSet은 요소를 추가한 순서를 저장합니다.
+**HashSet은 요소를 추가한 순서를 저장하지 않고 LinkedHashSet은 요소를 추가한 순서를 저장합니다.**<br>
 코드 결과로 보면 다음과 같습니다.
 ```kotlin
 val hashSet = hashSetOf("apple","banana","grape").apply {
