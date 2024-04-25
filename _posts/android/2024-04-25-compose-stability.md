@@ -25,6 +25,7 @@ Column(modifier = Modifier.padding(25.dp)) {
     Switch(selected, onCheckedChange = { selected = !selected })
 }
 ```
+![image_2](/android/paging3/multiview/image_2.png){: width="350"}
 ![stable_example](/android/compose/stability/stable_example.gif){: width="300"}
 ![skip_recompose](/android/compose/stability/skip_recompose.png){: width="700"}
 
