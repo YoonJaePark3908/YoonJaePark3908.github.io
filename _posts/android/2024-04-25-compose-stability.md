@@ -25,8 +25,8 @@ Column(modifier = Modifier.padding(25.dp)) {
     Switch(selected, onCheckedChange = { selected = !selected })
 }
 ```
-![stable_example.gif](..%2F..%2Fassets%2Fimg%2Fandroid%2Fcompose%2Fstability%2Fstable_example.gif){:width="300"}
-![skip_recompose.png](..%2F..%2Fassets%2Fimg%2Fandroid%2Fcompose%2Fstability%2Fskip_recompose.png){:width="700"}
+![stable_example.gif](/assets/img/android/compose/stability/stable_example.gif){:width="300"}
+![skip_recompose.png](/assets/img/android/compose/stability/skip_recompose.png){:width="700"}
 
 위와 같이 ContactDetails의 Component는 Recompose가 Skip 되는것을 확인 할 수 있었습니다.<br>
 ### 변경 가능한 객체
@@ -35,7 +35,7 @@ Column(modifier = Modifier.padding(25.dp)) {
 data class Contact(var name: String, var number: String)
 ```
 위에 나온 예시대로 var 키워드를 정의하여 직접 Recompose의 여부를 확인해봤습니다.<br>
-![image_2.png](..%2F..%2Fassets%2Fimg%2Fandroid%2Fcompose%2Fstability%2Fimage_2.png){:width="800"}
+![image_2.png](/assets/img/android/compose/stability/image_2.png){:width="800"}
 공식 문서에 나온대로 var 키워드를 선언했을 때 ContactDetails Componant는 Recompose가 되는것을 확인할 수 있었습니다.<br>
 만약 이러한 변경 가능한 객체를 안전한 타입으로 설정하고 싶을때 **@Stable** 어노테이션을 사용하면 var 키워드를 주더라도 Recompose 대상에서 제외가 가능합니다.
 
