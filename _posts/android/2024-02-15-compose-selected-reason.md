@@ -8,9 +8,7 @@ pin: false
 img_path: '/assets/img'
 ---
 ## **특정 트리거로 인해 UI Update 시 불필요한 렌더링 완화로 인한 성능 향상**
-[기존 View System에서 자식뷰가 새로 그려지게 되면 그 위에있는 ViewGroup 안에 있는 뷰도 같이 새로 그려지게 됩니다.](https://developer.android.com/topic/performance/rendering/optimizing-view-hierarchies#managing) 
-이를 보완하기 위해 Google Android 팀은 ViewGroup의 Depth를 최소하기 위해 ConstraintLayout을 사용을 권장합니다.
-**하지만 이는 ConstraintLayout을 사용해도 depth는 줄지만, ConstraintLayout안에 있는 다른 View 들도 다시 렌더링이 된다는 뜻입니다.**
+[기존 View System에서 자식뷰가 새로 그려지게 되면 그 위에있는 ViewGroup 안에 있는 뷰도 같이 새로 그려지게 됩니다.](https://developer.android.com/topic/performance/rendering/optimizing-view-hierarchies#managing)
 Compose는 이를 보완하여 Recompose 시 다시 그릴 필요없는 UI 렌더링을 스킵하도록 설계 되어있어 성능 향상를 불러옵니다.
 > Compose는 어떻게 불필요한 UI 렌더링을 스킵 하는지 궁금하시면 여기 [링크](https://developer.android.com/jetpack/compose/lifecycle#skipping)에서 확인하실 수 있습니다.
 {: .prompt-tip }
